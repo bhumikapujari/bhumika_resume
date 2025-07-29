@@ -1,0 +1,304 @@
+/* CSS SECTION */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    color: #374151;
+    background: linear-gradient(135deg, #eff6ff 0%, #e0e7ff 100%);
+    min-height: 100vh;
+}
+
+/* Header Styles */
+header {
+    background-color: white;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1f2937;
+}
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+.nav-links a {
+    color: #6b7280;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.nav-links a:hover {
+    color: #2563eb;
+}
+
+/* Hero Section */
+.hero {
+    padding: 5rem 0;
+    text-align: center;
+}
+.hero-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+.profile-icon {
+    width: 8rem;
+    height: 8rem;
+    background-color: white;
+    border-radius: 50%;
+    margin: 0 auto 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+.profile-icon i {
+    font-size: 3.5rem;
+    color: #2563eb;
+}
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #1f2937;
+    margin-bottom: 1rem;
+}
+.hero p {
+    font-size: 1.25rem;
+    color: #6b7280;
+    margin-bottom: 2rem;
+    max-width: 48rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.cta-button {
+    background-color: #2563eb;
+    color: white;
+    padding: 0.75rem 2rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+.cta-button:hover {
+    background-color: #1d4ed8;
+}
+
+/* Section Styles */
+.section {
+    padding: 4rem 0;
+}
+.section.white {
+    background-color: white;
+}
+.section-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: #1f2937;
+    margin-bottom: 3rem;
+}
+
+/* About Section */
+.about-content {
+    background-color: #f9fafb;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    font-size: 1.125rem;
+    color: #374151;
+    line-height: 1.75;
+    text-align: center;
+}
+
+/* Education Section */
+.education-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+.education-card {
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    transition: box-shadow 0.3s ease;
+}
+.education-card:hover {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+.education-icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.education-icon.blue { color: #2563eb; }
+.education-icon.green { color: #059669; }
+.education-icon.purple { color: #7c3aed; }
+.education-card h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+}
+.education-card p {
+    color: #6b7280;
+    margin-bottom: 0.5rem;
+}
+
+/* Skills Section */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+.skill-card {
+    text-align: center;
+}
+.skill-icon-container {
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+}
+.skill-icon-container.blue { background-color: #dbeafe; }
+.skill-icon-container.green { background-color: #d1fae5; }
+.skill-icon-container.purple { background-color: #e9d5ff; }
+.skill-icon-container.orange { background-color: #fed7aa; }
+.skill-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+.skill-icon.blue { color: #2563eb; }
+.skill-icon.green { color: #059669; }
+.skill-icon.purple { color: #7c3aed; }
+.skill-icon.orange { color: #ea580c; }
+.skill-card h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+}
+.skill-card p {
+    color: #6b7280;
+    font-size: 0.875rem;
+}
+.learning-banner {
+    background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+    color: white;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    text-align: center;
+    margin-top: 3rem;
+    display: inline-block;
+}
+.learning-banner i {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+.learning-banner p:first-of-type {
+    font-weight: 600;
+}
+.learning-banner p:last-of-type {
+    font-size: 0.875rem;
+    opacity: 0.9;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #1f2937;
+    color: white;
+}
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+.contact-item {
+    text-align: center;
+}
+.contact-icon {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+}
+.contact-icon.blue { background-color: #2563eb; }
+.contact-icon.red { background-color: #dc2626; }
+.contact-icon.linkedin { background-color: #0077b5; }
+.contact-icon.green { background-color: #059669; }
+.contact-item h3 {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+.contact-item p {
+    color: #d1d5db;
+    word-break: break-word;
+}
+.contact-item a {
+    color: #60a5fa;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.contact-item a:hover {
+    color: #93c5fd;
+}
+
+/* Footer */
+footer {
+    background-color: #111827;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
+footer p {
+    color: #9ca3af;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    .hero h1 {
+        font-size: 2rem;
+    }
+    .hero p {
+        font-size: 1rem;
+    }
+    .education-grid,
+    .skills-grid,
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+    .section {
+        padding: 2rem 0;
+    }
+}
+.profile-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 180%;
+    object-fit: cover;
+}
